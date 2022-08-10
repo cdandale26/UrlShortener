@@ -16,7 +16,7 @@ Open [http://localhost:5000](http://localhost:5000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-####`you will need instance of MongoDb so that you can add the url mappkings into the database`
+You will need instance of MongoDb so that you can add the url mappings(longUrl -> shortUrl) into the database
 
 ### Url-Shortener:
 
