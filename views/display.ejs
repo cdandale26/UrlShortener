@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Template</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <h2>URL shortner</h2>
+
+    <h4>List of all the URLs that you have generated using the URL shortener</h4>
+
+    <table>
+        <tr>
+           <th>shortUrl</th><th>LongUrl</th><th>Date Created</th>
+        </tr>
+     
+        <% for (var i = 0; i < data.length; i++) { %>
+         <tr>
+           <td><a href=<%=data[i].shortUrl%>><%=data[i].shortUrl%></a></td>
+           <td><a href=<%=data[i].longUrl%>><%=data[i].longUrl%></a></td>
+           <td><%= data[i].created_at %></td>
+         </tr>    
+        <% } %>
+     </table>
+
+    
+
+    
+    
+    
+</body>
+
+</html>

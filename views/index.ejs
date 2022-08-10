@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Template</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <h2>URL shortner</h2>
+
+    <h2>Paste a link to shorten it</h2>
+
+    <form action="/" method="post">
+        <input type="text" name="longUrl" placeholder="Enter link to shorten it">
+        <input type="checkbox" id="randomize" name="randomize">Make it unique</input>
+        <br />
+        <input type="submit" value="Shorten">
+    </form>
+    <h1>
+        <% if(data){ %>
+            Your shortened Url is: <a href=<%=data%>>
+                <%=data%>
+            </a>
+            <% } %>
+
+    </h1>
+    
+    
+</body>
+
+</html>
